@@ -1,5 +1,9 @@
 .opportunities {
     padding-top: 0px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   .opportunities__title {
