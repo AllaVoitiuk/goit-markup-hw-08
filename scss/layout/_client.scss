@@ -1,0 +1,49 @@
+.client__title {
+  @extend %title;
+}
+
+.our-client {
+    display: flex;
+    margin-right: auto;
+    margin-top: auto;
+  
+  
+  &__card {
+    margin-right: 30px;
+    margin-top: 0px;
+  }
+  
+  &:last-child {
+    margin-right: 0px;
+  }
+  
+  &__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  
+    transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+  }
+  
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid var(--color-accent);
+  }
+  
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--color-accent);
+  }
+  
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: var(--color-icon-fill);
+    transition: fill 250ms var(--timing-function);
+  }
+  
+ }

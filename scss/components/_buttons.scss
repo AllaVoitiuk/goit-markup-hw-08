@@ -1,0 +1,77 @@
+.button {
+    color: var(--white-color);
+    background-color: var(--color-accent);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+  
+  
+  &__primary {
+    display: inline-block;
+    height: 50px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    border-radius: 4px;
+    color: var(--white-color);
+    background-color: var(--color-accent);
+    cursor: pointer;
+    border: none;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    transition: color 250ms var(--timing-function);
+  }
+  &__primary:hover,
+  &__primary:focus {
+    color: var(--button-primary-focus);
+  }
+  
+  /* button portfolio */
+  &__secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color);
+    cursor: pointer;
+    text-decoration: none;
+  
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+      box-shadow 250ms var(--timing-function);
+  }
+  &__secondary:hover,
+  &__secondary:focus {
+    color: var(--white-color);
+    background-color: var(--color-accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  &__secondary--active {
+    background-color: var(--color-accent);
+    color: var(--white-color);
+  }
+  
+  &__submit {
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
+    margin: 30px auto 0 auto;
+    border: none;
+    transition: color 250ms var(--timing-function);
+  }
+  
+  &__submit:hover,
+  &__submit:focus {
+    color: var(--button-primary-focus);
+  }
+  
+}

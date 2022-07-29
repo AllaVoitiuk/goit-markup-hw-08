@@ -1,0 +1,19 @@
+.link {
+    display: inline-block;
+    color: var(--title-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .link:hover,
+  .link:focus {
+    color: var(--color-accent);
+  }
+
+  

@@ -1,0 +1,17 @@
+.portfolio-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-set {
+    display: flex;
+    
+  &__list {
+    margin-right: 8px;
+  }
+  
+  &__list:last-child {
+    margin-right: 0px;
+  }
+} 
