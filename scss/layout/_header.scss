@@ -1,11 +1,11 @@
 header {
     border-bottom: 1px solid #ececec;
-    // display: block;
-    // align-items: center;
-    // position: relative;
+     display: block;
+     align-items: center;
+    position: relative;
   }
     .header-nav {
-      display: flex;
+       display: flex;
     }
     
   
@@ -17,11 +17,11 @@ header {
 
 
   .site-nav {
-    display: flex;
+   display: flex;
  
   
   &__item {
-    margin-right: 50px;
+     margin-right: 50px;
     width: auto;
   }
   
@@ -44,40 +44,40 @@ header {
     bottom: 0;
     left: 0;
   }
-}
+  }
   
   .adr-nav {
-    display: flex;
-    margin-left: auto;
-    align-items: flex-end;
+     display: flex;
+     margin-left: auto;
+     align-items: flex-end;
   }
   
-  .adr-nav__list:not(:last-child) {
-    margin-right: 50px;
-  }
+   .adr-nav__list:not(:last-child) {
+     margin-right: 50px;
+   }
   
   .adr-nav__icon {
-    position: relative;
-    top: 3px;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
+     position: relative;
+     top: 3px;
+     margin-right: 10px;
+     width: 16px;
+     height: 16px;
   }
   
   .adr-nav__icon-envelope {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
+     display: inline-block;
+     width: 16px;
+     height: 12px;
   }
   
   .adr-nav__icon-telefon {
-    width: 10px;
-    height: 16px;
+     width: 10px;
+     height: 16px;
   }
 
   .adr-nav__link {
-    display: block;
-    padding: 32px 0;
+     display: block;
+     padding: 32px 0;
   
     color: var(--primary-text-color);
     font-weight: 500;

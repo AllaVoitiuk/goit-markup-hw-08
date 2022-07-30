@@ -11,6 +11,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -28,6 +30,18 @@
     margin-right: auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+
+  @media (min-device-pixel-ratio:2) ,
+  (min-resolution:192dpa) ,
+  (min-resolution:2dppx) {
+    & {
+      background-image: url(/img/Img_hero@2x.jpg);
+      background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+
+    }
   }
 
 }
