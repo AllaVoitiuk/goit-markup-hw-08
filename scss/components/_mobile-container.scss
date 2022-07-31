@@ -1,0 +1,28 @@
+.mobile-container {
+    display: none;
+    @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 480px;
+    height: 796px;
+    background-color: var(--white-color);
+    text-align: left;
+    // padding: 10px 15px 48px 40px ;
+    padding: 48px 40px;
+    // z-index: 50;
+    }
+    
+    
+    
+    & is-open {
+        display: block;
+    }
+   
+}
+
+.open-btn is-open  .mobile-container {
+   display: block;
+}
+
