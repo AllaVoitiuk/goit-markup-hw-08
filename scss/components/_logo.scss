@@ -44,7 +44,16 @@
     display: block;
     margin-bottom: 20px;
     margin-right: 0;
-  
-    width: 145px;
+
+    @media screen and (min-width: 480px){
+      width: 154px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      width: 145px;
+    }
+    
   }
  

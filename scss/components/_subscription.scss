@@ -1,9 +1,18 @@
 .subscription {
     display: block;
     position: relative;
-    width: 570px;
-    height: 86px;
-    margin-left: 93px;
+
+    @media screen and (min-width: 320px) {
+      width: 450px;
+      height: 156px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 570px;
+      height: 86px;
+      margin-left: 93px;
+    }
+    
   
   
   &__title {
@@ -15,6 +24,10 @@
     color: var(--white-color);
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 320px) {
+      text-align: center;
+    }
   }
   
   &__label {
@@ -31,10 +44,16 @@
     color: rgba(255, 255, 255, 0.6);
   
     transition: transform 250ms var(--timing-function);
+
+    @media screen and (min-width: 320px) {
+      top:40%;
+      
+    }
+    
   }
   
   &__input {
-    width: 358px;
+    
     height: 50px;
     padding: 15px 16px;
     background: var(--color-fon);
@@ -43,7 +62,16 @@
     border-radius: 4px;
     color: var(--white-color);
     outline: none;
-  }
+
+    @media screen and (min-width: 320px) {
+      width: 450px;
+      
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+}
   
   &__input:focus + &__label,
   &__input:not(:placeholder-shown) + &__label {
@@ -53,7 +81,7 @@
 }
 
   .footer-submit {
-    position: absolute;
+    
     width: 200px;
     height: 50px;
     padding: 10px 28px;
@@ -75,7 +103,16 @@
     border-radius: 4px;
     border: none;
     transition: color 250ms var(--timing-function);
-  
+    
+    @media screen and (min-width: 320px) {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+    }
   
   &:hover,
   &:focus {

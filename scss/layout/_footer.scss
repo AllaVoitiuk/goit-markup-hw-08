@@ -7,10 +7,27 @@
     &__info {
       display: flex;
       align-items: baseline;
+
+      @media screen and (min-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 165px;
+      }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+      }
+      
     }
   
  &-contact {
     width: 231px;
+
+    @media screen and (min-width: 480px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
   }
  &-link {
     display: flex;
@@ -28,8 +45,21 @@
   
   
  &-adr {
-    display: block;
-    width: 231px;
+  display: block;
+  width: 231px;
+
+  @media screen and (min-width: 480px) {
+    .footer-adr {
+      text-align: center;
+        margin-bottom: 60px;
+    }
+    
+  }
+  
+    @media screen and (min-width: 1200px) {
+     
+    }
+    
   }
   
 
@@ -74,7 +104,16 @@
 
   .inviting {
     width: 206px;
-    margin-left: 70px;
+
+    @media screen and (min-width: 480px) {
+      margin-left: 0;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 70px;
+    }
+    
  
   
   &__network {
@@ -100,5 +139,9 @@
     color: var(--white-color);
   
     margin-top: 0px;
+
+    @media screen and (min-width: 480px) {
+    text-align: center;
+    }
   }
 }

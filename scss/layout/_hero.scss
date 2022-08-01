@@ -16,6 +16,10 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 480px)  {
+      max-width: 479px;
+    }
   
   
   &__title {
