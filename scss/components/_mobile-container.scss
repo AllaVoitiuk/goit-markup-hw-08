@@ -1,5 +1,5 @@
 .mobile-container {
-    // display: none;
+    display: none;
     @media screen and (max-width: 767px) {
     position: absolute;
     top: 0;
@@ -11,18 +11,19 @@
     text-align: left;
     // padding: 10px 15px 48px 40px ;
     padding: 48px 40px;
-    // z-index: 50;
+    
     }
     
-    
-    
-    & is-open {
+    &.is-open {
         display: block;
     }
-   
+    
+    // & is-open .close-btn__element {
+    //     display: block;
+    // }
 }
 
-.open-btn is-open  .mobile-container {
-   display: block;
-}
+// .open-btn is-open  .mobile-container {
+//    display: block;
+// }
 

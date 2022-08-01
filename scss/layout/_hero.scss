@@ -2,8 +2,8 @@
     margin-top: 0;
     margin-bottom: 0;
     background-color: var(--color-fon);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
   
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -30,15 +30,23 @@
     margin-right: auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 1.62;
+      text-align: center;
+      
+    }
   }
 
   @media (min-device-pixel-ratio:2) ,
   (min-resolution:192dpa) ,
   (min-resolution:2dppx) {
     & {
-      background-image: url(/img/Img_hero@2x.jpg);
-      background-size: cover;
-      background-position: center;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/Img_hero@2x.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
     }

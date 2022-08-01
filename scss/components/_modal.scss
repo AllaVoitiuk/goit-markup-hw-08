@@ -28,7 +28,7 @@
   // }
 
   .modal {
-    @media screen and (min-width: 767px) {
+   
       position: absolute;
       top: 50%;
       left: 50%;
@@ -38,21 +38,25 @@
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 4px;
+
+      @media screen and (min-width: 480px) {
+        width: 450px;
     }
+
     @media screen and (min-width: 1200px) {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: transform 250ms var(--timing-function); 
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      // transition: transform 250ms var(--timing-function); 
       width: 528px;
       height: 581px;
       padding: 40px;
     
-      background: var(--white-color);
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 4px;
+      // background: var(--white-color);
+      // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      //   0px 2px 1px rgba(0, 0, 0, 0.2);
+      // border-radius: 4px;
     
     }
    
@@ -60,11 +64,19 @@
   }
 
   .open-btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 10px;
-    right: 15px;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 10px;
+      right: 15px;
+      background-color: var(--white-color);
+      border: none;
+    }
+   
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
 
     // & is-open .mobile-container {
     //   display: block;
@@ -83,11 +95,12 @@
     fill: var(--color-accent);
     }
 
-    & is-open .close-btn__element {
+    &.is-open .open-btn__close-element {
       display: block;
+     
     }
 
-    & is-open .open-btn__element {
+    &.is-open .open-btn__element {
       display: none;
     }
 
@@ -99,7 +112,7 @@
     height: 16px;
   }
   
-  .close-btn__element {
+  .open-btn__close-element {
     display: none;
 
     width: 18px;
