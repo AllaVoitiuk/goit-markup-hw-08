@@ -109,9 +109,6 @@ body .modal-open {
   }
 }
 
-.mobile-container {
-  display: none;
-}
 @media screen and (max-width: 767px) {
   .mobile-container {
     position: absolute;
@@ -189,6 +186,30 @@ body .modal-open {
 
 .link:hover,
 .link:focus {
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 480px) {
+  .header__mobile-social {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    bottom: 48px;
+  }
+}
+
+.header__mobile-list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+}
+
+.header__mobile-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  text-decoration: none;
   color: var(--color-accent);
 }
 
@@ -783,9 +804,11 @@ header {
   color: var(--color-accent);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .adr-nav {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 562px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -844,6 +867,22 @@ header {
 .adr-nav__link:focus {
   color: var(--color-accent);
   fill: var(--color-accent);
+}
+
+@media screen and (min-width: 480px) {
+  .adr-nav__link-mail {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    padding-bottom: 0;
+    color: var(--color-accent);
+  }
+}
+
+.adr-nav__link-tel {
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 .hero {

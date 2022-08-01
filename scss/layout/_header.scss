@@ -92,8 +92,11 @@ header {
   
   .adr-nav {
 
-     @media screen and (max-width: 767px) {
-      display: none;
+     @media screen and (min-width: 480px) {
+      display: block;
+      position: absolute;
+      top: 562px;
+      
     }
 
     @media screen and (min-width: 768px) {
@@ -109,6 +112,7 @@ header {
    }
   }
 
+  
   .adr-nav__icon {
 
     @media screen and (min-width: 480px) {
@@ -157,3 +161,22 @@ header {
     color: var(--color-accent);
     fill: var(--color-accent);
   }
+
+    .adr-nav__link-mail {
+      @media screen and (min-width: 480px) {
+      
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+
+        padding-bottom: 0; 
+
+        color: var(--color-accent);
+      }
+    }
+
+    .adr-nav__link-tel {
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
