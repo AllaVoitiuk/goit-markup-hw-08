@@ -6,12 +6,20 @@
 
   .button-set {
     display: flex;
+    @media screen and (min-width: 320px) {
+      flex-wrap: wrap;
+    }
     
   &__list {
     margin-right: 8px;
+
+    @media screen and (min-width: 320px) {
+      margin-bottom: 15px;
+    }
   }
   
   &__list:last-child {
     margin-right: 0px;
+    
   }
 } 

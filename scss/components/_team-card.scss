@@ -1,7 +1,8 @@
 .team-card {
   
   @media screen and (min-width:480px) {
-    
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width:1200px) {
@@ -19,7 +20,12 @@
 
   }
    
-  
+  .team-card__thumb {
+    @media screen and (min-width:480px) {
+      text-align: center;
+    }
+    
+  }
   
   &__item {
     margin-top: 30px;
@@ -92,6 +98,9 @@
     margin-right: 0px;
   }
   
+  &__img {
+    width: 100%;
+  }
 }
 
 .card {

@@ -225,6 +225,11 @@ body {
   padding-bottom: 94px;
 }
 
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .client__title, .section-team__title, .opportunities__title {
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -711,6 +716,12 @@ body {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 480px) {
+  .team-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team-card {
     padding: 0;
@@ -721,6 +732,11 @@ body {
   }
   .team-card:last-child {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .team-card .team-card__thumb {
+    text-align: center;
   }
 }
 .team-card__item {
@@ -778,6 +794,9 @@ body {
 }
 .team-card__list:last-child {
   margin-right: 0px;
+}
+.team-card__img {
+  width: 100%;
 }
 
 .card {
@@ -1332,8 +1351,18 @@ header {
 .button-set {
   display: flex;
 }
+@media screen and (min-width: 320px) {
+  .button-set {
+    flex-wrap: wrap;
+  }
+}
 .button-set__list {
   margin-right: 8px;
+}
+@media screen and (min-width: 320px) {
+  .button-set__list {
+    margin-bottom: 15px;
+  }
 }
 .button-set__list:last-child {
   margin-right: 0px;
@@ -1342,21 +1371,49 @@ header {
 .portfolio-card {
   margin-top: 50px;
 }
+@media screen and (min-width: 320px) {
+  .portfolio-card {
+    margin-top: 25px;
+  }
+}
 
 .propose {
-  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+}
+@media screen and (min-width: 320px) {
+  .propose {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .propose {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 .propose__list {
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 90px) / 3);
+}
+@media screen and (min-width: 320px) {
+  .propose__list {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .propose__list {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .propose__list {
+    margin-right: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 .propose__link {
   display: block;
