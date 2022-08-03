@@ -83,18 +83,19 @@
 .mobile-menu {
 
     background-color: var(--white-color);
-    padding: 0;
+    
     margin: 0;
     list-style: none;
+    height: 796px;
+    padding: 48px 40px;
 }
 
-.header-nav__item-mobile {
+.header-nav__item-component {
     position: relative;
     display: flex;
     align-items: center;
-    padding: 48px 40px;
     max-width: 480px;
-    height: 796px;
+   
     
 
     
@@ -106,8 +107,8 @@
 
     @media screen and (max-width: 767px) {
         position: absolute;
-        top: 48px;
-        left: 40px;
+        top: 0;
+        left: 0;
        
         font-size: 40px;
      
