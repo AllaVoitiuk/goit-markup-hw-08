@@ -1126,7 +1126,7 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/Img_hero.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img_hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1135,11 +1135,13 @@ header {
 @media screen and (min-width: 320px) {
   .hero {
     max-width: 480px;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img_hero.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/img_hero.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
