@@ -1,9 +1,9 @@
 .header__mobile-social {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
         display: flex;
         position: absolute;
         left: 40px;
-        bottom: 48px;
+        top: 726px;
 
     }
 }
