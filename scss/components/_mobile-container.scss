@@ -64,7 +64,10 @@
     }
 }
 
-.menu-toggle:hover .open-element,
+.menu-toggle:hover .open-element {
+    fill: #2196f3;
+}
+
 .menu-toggle:focus .open-element {
     fill: #2196f3;
 }
@@ -96,11 +99,6 @@
     align-items: center;
     max-width: 480px;
    
-    
-
-    
-
-    
 }
 
 .site-nav-mobile {
@@ -155,9 +153,11 @@
     transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
+
 .adr-nav-mobile__link:hover,
 .adr-nav-mobile__link:focus {
     color: var(--color-accent);
+    fill: var(--color-accent);
 }
 
 .adr-nav-mobile__link-mail {

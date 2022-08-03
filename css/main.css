@@ -147,7 +147,10 @@ body {
   fill: #2196f3;
 }
 
-.menu-toggle:hover .open-element,
+.menu-toggle:hover .open-element {
+  fill: #2196f3;
+}
+
 .menu-toggle:focus .open-element {
   fill: #2196f3;
 }
@@ -221,6 +224,7 @@ body {
 .adr-nav-mobile__link:hover,
 .adr-nav-mobile__link:focus {
   color: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 @media screen and (min-width: 320px) {
@@ -1122,7 +1126,7 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img_hero.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/Img_hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
