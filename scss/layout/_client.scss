@@ -24,10 +24,15 @@
 .our-client {
     display: flex;
     flex-wrap: wrap;
-    // margin-right: auto;
-    // margin-top: auto;
+    margin-right: -15px;
+    margin-left: -15px;
     @media screen and (min-width: 320px){
       justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -36,25 +41,41 @@
         
   
   &__card {
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-top: 0px;
     @media screen and (min-width: 320px) {
       margin-bottom: 30px;
     }
 
-    &:last-child {
-      margin-right: 0;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+      // margin-right: 15px;
+      // margin-left: 15px;
+
+      
     }
+    
+    // &:last-child {
+    //   margin-right: 0;
+    // }
+  }
+
+  &__card:nth-last-child(-n+3) {
+    @media screen and (min-width: 768px){
+      margin-bottom: 0;
+    }
+    
   }
   
-  &:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  //   margin-bottom: 0;
+  // }
   
   &__link {
     display: flex;
-    width: 170px;
+    
     height: 92px;
     align-items: center;
     justify-content: center;
@@ -62,6 +83,18 @@
     border-radius: 4px;
   
     transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+  
+    @media screen and (min-width: 320px){
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
   
   &__link:hover,

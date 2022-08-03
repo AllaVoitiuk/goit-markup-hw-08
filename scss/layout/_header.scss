@@ -57,13 +57,23 @@ header {
     }
     
     @media screen and (min-width: 768px) {
-     display: flex;
-     margin-left: auto;
-     align-items: flex-end;
+      display: inline-block;
+      margin-left: auto;
+      margin-top: 21px;
+      margin-right: 0;
+      margin-bottom: 11px;
+     
+     
     }
   }
   
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
+      .adr-nav {
+        display: flex;
+        align-items: flex-end;
+      }
+      
+
     .adr-nav__list:not(:last-child) {
       margin-right: 50px;
     }
@@ -86,8 +96,14 @@ header {
   }
   
   .adr-nav__icon-envelope {
-   
+
     @media screen and (min-width: 768px) {
+        display: inline-block;
+        width: 14px;
+        height: 10px;
+      }
+   
+    @media screen and (min-width: 1200px) {
      display: inline-block;
      width: 16px;
      height: 12px;
@@ -95,8 +111,18 @@ header {
   }
   
   .adr-nav__icon-telefon {
-     width: 10px;
-     height: 16px;
+     
+
+    @media screen and (min-width: 768px) {
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+
+
   }
 
   .adr-nav__link {
@@ -108,9 +134,22 @@ header {
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-  
+
     transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.17;
+      padding-top: 0;
+      padding-bottom: 10px;
+
+    }
   }
+      
+    
+
+
+
   
   .adr-nav__link:hover,
   .adr-nav__link:focus {
