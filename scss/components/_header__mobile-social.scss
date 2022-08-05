@@ -15,10 +15,18 @@
 
 .header__mobile-link {
     font-weight: 500;
-    font-size: 18px;
+    
     line-height: 1.22;
     letter-spacing: 0.02em;
     padding-right: 10px;
     text-decoration: none;
     color: var(--color-accent);
+
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 18px;
+    }
 }

@@ -169,7 +169,7 @@ body {
   background-color: var(--white-color);
   margin: 0;
   list-style: none;
-  height: 796px;
+  height: 100% w;
   padding: 48px 40px;
 }
 
@@ -179,6 +179,7 @@ body {
   align-items: center;
   max-width: 480px;
   height: 100vh;
+  background-color: var(--white-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -231,9 +232,14 @@ body {
 
 @media screen and (min-width: 320px) {
   .adr-nav-mobile__link-tel {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .adr-nav-mobile__link-tel {
+    font-size: 34px;
   }
 }
 
@@ -336,12 +342,21 @@ body {
 
 .header__mobile-link {
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   padding-right: 10px;
   text-decoration: none;
   color: var(--color-accent);
+}
+@media screen and (min-width: 320px) {
+  .header__mobile-link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__mobile-link {
+    font-size: 18px;
+  }
 }
 
 .section {
