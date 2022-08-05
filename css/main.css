@@ -1124,7 +1124,7 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img_hero.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/img_hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
