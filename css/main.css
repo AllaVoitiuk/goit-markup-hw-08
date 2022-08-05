@@ -1176,14 +1176,6 @@ header {
     text-align: center;
   }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpa), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/Img_hero@2x.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
 
 @media screen and (min-width: 320px) {
   .benefits {
