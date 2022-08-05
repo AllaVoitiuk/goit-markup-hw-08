@@ -20,14 +20,7 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header__button">
-                        <!-- <button type="button" class="open-btn" data-menu-button aria-controls="mobile-container">
-                            <svg width="40" height="40" class="open-btn__icon icon">
-                                <use class="open-element" href="./img/icons.svg#icon-menu_40px">
-                                </use>
-                                <use class="close-element" href="./img/icons.svg#icon-close-black">
-                                </use>
-                            </svg>
-                        </button> -->
+                        
                          <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                             <svg width="40" height="40" class="open-btn__icon icon">
                                 <use class="open-element" href="./img/icons.svg#icon-menu_40px">
@@ -154,7 +147,9 @@
                     <ul class="scope-card">
                         <li class="scope-card__item">
                             <div class="scope-card__set">
-                                <img src="./img/foto1.jpg" alt="коддинг" width="370" height="294">
+                                <img srcset="./img/foto1-740.jpg 740w, ./img/foto1-1110.jpg 740w" 
+                                sizes="(min-width: 1200px) 370px"
+                                src="./img/foto1.jpg" alt="коддинг" >
                             </div>
                             <div class="scope-card__overley">
                                 <p class="scope-card__text">
@@ -164,7 +159,9 @@
                         </li>
                         <li class="scope-card__item">
                             <div class="scope-card__set">
-                                <img src="./img/foto2.jpg" alt="интерфейс" width="370" height="294">
+                                <img srcset="./img/foto2-740.jpg 740w, ./img/foto2-1110.jpg 740w" 
+                                sizes="(min-width: 1200px) 370px"
+                                src="./img/foto2.jpg" alt="интерфейс">
                             </div>
                             <div class="scope-card__overley">
                                 <p class="scope-card__text">
@@ -174,7 +171,9 @@
                         </li>
                         <li class="scope-card__item">
                             <div class="scope-card__set">
-                                <img src="./img/foto3.jpg" alt="тестирование" width="370" height="294">
+                                <img srcset="./img/foto3-740.jpg 740w, ./img/foto3-1110.jpg 740w" 
+                                sizes="(min-width: 1200px) 370px"
+                                src="./img/foto3.jpg" alt="тестирование" width="370" height="294">
                             </div>
                             <div class="scope-card__overley">
                                 <p class="scope-card__text">
@@ -193,14 +192,7 @@
                     <ul class="team-card">
                         <li class="team-card__item">
                                 <div class="team-card__thumb">
-                            <!-- <img srcset="./images/example-work/mobile-example-1-@1x.jpg  450w,
-                                            ./images/example-work/mobile-example-1-@2x.jpg  900w,
-                                            ./images/example-work/tablet-example-1-@1x.jpg  354w,
-                                            ./images/example-work/tablet-example-1-@2x.jpg  708w,
-                                            ./images/example-work/desktop-example-1-@1x.jpg 370w,
-                                            ./images/example-work/desktop-example-1-@2x.jpg 740w"
-                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 320px) 450px"
-                    src="./images/team-photo/mobile-photo-1-@1x.jpg" alt="пример работы один" /> -->
+                           
                                     <picture>
                                         <source media="(min-width: 1200px)" srcset="./img/product_designer-270.jpg" 270w>
                                         <source media="(min-width: 1200px)" srcset="./img/product_designer-540.jpg" 540w>
