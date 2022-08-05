@@ -228,14 +228,14 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  .adr-nav-mobile__link-mail {
+  .adr-nav-mobile__link-tel {
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
   }
 }
 
-.adr-nav-mobile__link-tel {
+.adr-nav-mobile__link-mail {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -1493,7 +1493,6 @@ header {
 @media screen and (min-width: 480px) {
   .footer-adr .footer-adr {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 .social__page--white {
@@ -1524,6 +1523,16 @@ header {
 .wrapper__item:first-child {
   margin-top: 0px;
 }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    margin-bottom: 0;
+  }
+}
 
 .inviting {
   max-width: 206px;
@@ -1537,6 +1546,7 @@ header {
 @media screen and (min-width: 1200px) {
   .inviting {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 .inviting__network {

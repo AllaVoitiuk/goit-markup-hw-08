@@ -160,7 +160,7 @@
     fill: var(--color-accent);
 }
 
-.adr-nav-mobile__link-mail {
+.adr-nav-mobile__link-tel {
   @media screen and (min-width: 320px) {
     font-size: 34px;
     line-height: 1.18;
@@ -168,7 +168,7 @@
   }
 }
 
-.adr-nav-mobile__link-tel {
+.adr-nav-mobile__link-mail {
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
