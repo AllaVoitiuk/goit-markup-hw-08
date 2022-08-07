@@ -950,9 +950,6 @@ body {
 .team-card__list:last-child {
   margin-right: 0px;
 }
-.team-card__img {
-  width: 100%;
-}
 
 .card {
   margin-top: 50px;
@@ -1109,7 +1106,6 @@ header {
   padding: 32px 0;
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 16px;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
@@ -1120,6 +1116,12 @@ header {
     line-height: 1.17;
     padding-top: 0;
     padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adr-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -1405,6 +1407,7 @@ header {
 @media screen and (min-width: 320px) {
   .our-client__card {
     margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1428,17 +1431,17 @@ header {
 }
 @media screen and (min-width: 320px) {
   .our-client__link {
-    width: 210px;
+    max-width: 210px;
   }
 }
 @media screen and (min-width: 768px) {
   .our-client__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .our-client__link {
-    width: 170px;
+    max-width: 170px;
   }
 }
 .our-client__link:hover, .our-client__link:focus {
@@ -1516,11 +1519,18 @@ header {
   fill: var(--white-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .wrapper {
+    text-align: center;
+  }
+}
 .wrapper__link {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-style: normal;
-  line-height: 1.7;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
   transition: color 250ms var(--timing-function);
 }
